@@ -35,16 +35,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../../styles/variables.scss';
 .whotofollow {
-	background-color: white;
+	background-color:$white;
 	padding: 10px;
 	border-radius: 10px;
-	border: 2px solid rgba($color: #000000, $alpha: 0.1);
+	border: $border-light;
+	height:400px;
 	h1 {
 		font-size: 16px;
 		text-align: center;
 		font-weight: 900;
-		border-bottom: 2px solid rgba($color: #000000, $alpha: 0.1);
+		border-bottom:$border-light;
 		padding: 10px;
 	}
 	.singleuser {
@@ -64,12 +66,12 @@ export default {
 			font-weight: 900;
 		}
 		button {
-			background-color: #4C585C;
+			background-color: $blue-button;
 			padding: 0px 10px;
 			border-radius: 10px;
 			font-size: 14px;
-			color: white;
-			font-weight: 900;
+			color: $white;
+			font-weight: 700;
 			margin: 0 auto;
 		}
 	}

@@ -8,7 +8,7 @@ import router from './router';
 
 
 // CSS
-import './styles/variables.scss'
+import '../src/styles/variables.scss'
 
 import axios from 'axios';
 Vue.prototype.axios=axios

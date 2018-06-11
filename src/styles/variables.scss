@@ -1,1 +1,19 @@
-$background : #D6CCC6;
+$bg-col : #f1f1f1;
+
+// fonts and borders
+$dark-font:#262C2E;
+$medium-font:#4C585C;
+
+
+$white: #FFFFFF;
+
+
+
+//BUTTONS
+$orange-button:rgb(249, 154, 52);
+$blue-button: #43575e;
+$gradient-light:linear-gradient(to bottom, #5d7f89, #789793, #9dad9f, #c3c3b2, #e6d9ce);
+
+
+$border-light:2px solid rgba($color: $dark-font, $alpha: 0.1);
+$border-hover:3px solid rgba($color: $medium-font, $alpha: 0.8);

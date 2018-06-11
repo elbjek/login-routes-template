@@ -45,11 +45,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../../styles/variables.scss';
 .sidebar {
-	border: 2px solid rgba($color: #000000, $alpha: 0.1);
+	border: 2px solid rgba($color: $dark-font, $alpha: 0.1);
 	border-radius: 5px;
-	background-color: white;
+	background-color: $white;
+	max-height:400px;
 	.user {
 		padding: 10px 0px 40px;
 		.img {
@@ -75,13 +76,13 @@ export default {
 					padding: 30px 0px 0px
 				}
 				a {
-					color: #4C585C;
+					color: $medium-font;
 				}
 			}
 		}
 	}
 	.connections {
-		border-top: 2px solid rgba($color: #000000, $alpha: 0.1);
+		border-top: 2px solid rgba($color: $dark-font, $alpha: 0.1);
 		width: 100%;
 		.col {
 			// border: 1px solid black;
@@ -91,7 +92,7 @@ export default {
 				cursor: pointer;
 			}
 			&:last-of-type {
-				border-left: 2px solid rgba($color: #000000, $alpha: 0.1);
+				border-left: 2px solid rgba($color: $dark-font, $alpha: 0.1);
 			}
 			h2 {
 				margin-top: 10px;

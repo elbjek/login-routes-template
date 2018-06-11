@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../src/styles/variables.scss';
 body{
 background-color: #f1f1f1 !important;
 margin:0;
@@ -36,5 +37,6 @@ padding:0;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   margin:0 auto;
 // height:200vh;
+background-color: $bg-col;
 }
 </style>

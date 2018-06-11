@@ -20,18 +20,18 @@ export default {
 </script>
 
 <style  scoped lang="scss">
-
+@import '../../styles/variables.scss';
 .hero{
-background-image: url('../../assets/hero.jpg');
-background-position: center;
-background-size: cover;
-height: 60vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+    background-image: url('../../assets/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 h1, p{
-    color:white;
+    color:$white;
 }
 h1{
     font-size: 60px;
@@ -40,11 +40,11 @@ h1{
     font-size: 20px;
 }
 .login{
-padding:10px 20px ;
-background-color: rgba($color: #FFF, $alpha: 0.8);
-border-radius: 10px;
-color:black;
-font-weight: bolder;
+    padding:10px 20px ;
+    background-color: rgba($color: $white, $alpha: 0.8);
+    border-radius: 10px;
+    color:$dark-font;
+    font-weight: bolder;
 }
 }
 </style>

@@ -96,13 +96,13 @@
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='scss'>
-
+@import '../styles/variables.scss';
 .container-fluid{
-   background-image: linear-gradient(to bottom, #5d7f89, #789793, #9dad9f, #c3c3b2, #e6d9ce);
-    height:95vh;
+background-image:$gradient-light;
+height:95vh;
 .form{
     margin:0 auto;
-    background-color: rgba($color: #ffffff, $alpha: 1);
+    background-color: rgba($color: $white, $alpha: 1);
     border-radius: 10px;
 
 }
@@ -110,18 +110,19 @@
         font-weight: 900;
         font-size: 30px;
         padding:100px 10px 30px 10px;
+        color:$dark-font;
     }
     form{
 
         input{
             border:none;
             width:100%;
-            border-bottom: 1px solid gray;
+            border-bottom: 1px solid $dark-font;
         }
     }
     button{
         // margin:20px 0px 100px 0px;
-        background-color: #43575e;
+        background-color: $blue-button;
         border:none;
         font-weight: 700;
         padding:10px 20px;
@@ -138,10 +139,10 @@
           a{
               font-size: 14px;
             margin:0px;
-              color:#242c2f;
+              color:$dark-font;
               transition:0.4s ease;
               &:hover{
-                  font-weight: bolder;
+                  font-weight: bold;
                   text-decoration: none;
               }
           }

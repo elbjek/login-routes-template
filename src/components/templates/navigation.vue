@@ -34,13 +34,14 @@ export default {
 </script>
 
 <style  lang="scss">
+@import '../../styles/variables.scss';
 .navbar{
     max-width:1440px;
     margin:0 auto;
     z-index: 1;
 }
 .nav-item a{
-    color: rgba($color: #000000, $alpha: 1.0) !important;
+    color: rgba($color: $dark-font, $alpha: 1.0) !important;
     font-weight: bold;
     &:hover{
       text-decoration: none;
@@ -48,13 +49,13 @@ export default {
 }
 .logo{
     font-weight: 900 !important;
-    color:#262C2E;
+    color:$dark-font;;
     font-size: 20px;
     transition: 0.2s ease-in-out;
     &:hover{
       text-decoration: none;
       transform: scale(1.05,1.05);
-      color:#262C2E;
+      color:$dark-font;
 
     }
 }
