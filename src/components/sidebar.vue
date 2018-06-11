@@ -1,14 +1,14 @@
 <template>
  
-         <div class="sidebar  ">
-            <div class="user col d-flex justify-content-center flex-column">
+         <div class="sidebar col  d-flex justify-content-center align-items-center flex-column ">
+            <div class="user  d-flex justify-content-center align-items-center flex-column">
                <div class="img "><img :src="user.img" alt=""></div>
                <ul class="">
                   <li><a href="#">{{user.name}}</a></li>
                   <li><a href="#">{{user.location}}</a></li>
                </ul>
             </div>
-            <div class="connections d-flex  flex-row">
+            <div class="connections d-flex justify-content-center  flex-row">
                <div class="col">
                   <h2>{{user.connections}}</h2>
                   <p>Connections</p>
@@ -19,7 +19,6 @@
                </div>
             </div>
          </div>
-
 
 </template>
 
@@ -51,11 +50,9 @@ export default {
 .sidebar {
 	border: 2px solid rgba($color: #000000, $alpha: 0.1);
 	border-radius: 5px;
-	// height:40vh;
-	padding: 40px 0px 0px;
 	background-color: white;
 	.user {
-		padding: 30px 0px 40px;
+		padding: 10px 0px 40px;
 		.img {
 			height: 120px;
 			width: 120px;

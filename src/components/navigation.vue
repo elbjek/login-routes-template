@@ -42,6 +42,9 @@ export default {
 .nav-item a{
     color: rgba($color: #000000, $alpha: 1.0) !important;
     font-weight: bold;
+    &:hover{
+      text-decoration: none;
+    }
 }
 .logo{
     font-weight: 900 !important;

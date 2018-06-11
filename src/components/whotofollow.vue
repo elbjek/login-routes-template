@@ -20,21 +20,6 @@ export default {
   },
   data(){
     return{
-        //   users:[
-        //         {
-        //             img:"http://cdn.ebaumsworld.com/mediaFiles/picture/166932/83208904.jpg",
-        //             name:"MissB",
-        //         },
-        //           {
-        //             img:"http://www.evilmilk.com/pictures/Random_Celebrity_Picdump_6.jpg",
-        //             name:"Shaquille O'Seal",
-        //         },
-        //           {
-        //             img:"https://www.topcelebritynetworths.com/cnwimages/a/adam-sandler.jpg",
-        //             name:"Adam S",
-        //         }
-
-        //   ],
           users:[]
           
       }
@@ -72,9 +57,9 @@ h1{
         }
     }
     p{
-        margin:0; 
-        padding:10px;
-        width:70%;
+        margin:0 auto; 
+        // padding:10px;
+        width:30%;
         font-weight: 900;
     }
 button{
@@ -85,7 +70,8 @@ button{
     font-size: 14px;
     color:white;
     font-weight: 900;
-    margin:10px;
+    margin:0 auto;
+    
 }
 }
 }

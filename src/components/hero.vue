@@ -1,8 +1,9 @@
  <template>
   <div class="hero">
 
-<h1> Welcome to this template</h1>
-<p>Have fun!</p>
+        <h1> Welcome to this template</h1>
+        <p>Have fun!</p>
+         <router-link class='login' to="/login">Login</router-link> 
 
   </div>
 </template>
@@ -37,6 +38,13 @@ h1{
     font-weight: 900;
 } p{
     font-size: 20px;
+}
+.login{
+padding:10px 20px ;
+background-color: rgba($color: #FFF, $alpha: 0.8);
+border-radius: 10px;
+color:black;
+font-weight: bolder;
 }
 }
 </style>
