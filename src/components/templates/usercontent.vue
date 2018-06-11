@@ -1,42 +1,39 @@
 <template>
-
-  <div>
-        <div class="col d-flex newstatus flex-column ">
-          <ul class="d-flex justify-content-around">
-              <li ><a href="#">Share an update</a></li>
-              <li @click="inProgress()"><a href="#">Share a photo</a></li>
-              <li @click="inProgress()"><a href="#">Write an article</a></li>
-          </ul>
-          <textarea v-model="statusUpdate"  name="" placeholder="Maximum 150 characters" id="textarea" cols="30" rows="2"></textarea>
-          <button class="btn btn-primary" v-on:click="postStatus()" > Post</button>
-        </div>
-    <!-- NEW STATUS -->
-		  <div class="statuscard col d-flex  flex-column "  >
-        <a href="#"  style="position:absolute; right:20px; top:10px">x</a>
-        <div class="user d-flex align-items-center  ">
-          <div class=" img "> <img :src="user.img" alt=""> </div>
-          <p class="col">{{user.name}}</p>
-        </div>
-        <div class="status">
-          <p class="col"> This is a status template and its awesome. </p>
-          <p class="col " style="text-align:right">20:24 pm</p>
-        </div>
-    </div>
-    <div class="statuscard col d-flex  flex-column "  v-for="status in newStatus" :key="status.id">
-        <a href="#" @click="removeStatus(item)" style="position:absolute; right:20px; top:10px">x</a>
-        <div class="user d-flex align-items-center  ">
-          <div class=" img "> <img :src="status.img" alt=""> </div>
-          <p class="col">{{status.name}}</p>
-        </div>
-        <div class="status">
-          <p class="col">  {{status.status}} </p>
-          <p class="col " style="text-align:right">{{status.time}}</p>
-        </div>
-    </div>
-
-
-  </div>
-
+   <div>
+      <div class="col d-flex newstatus flex-column ">
+         <ul class="d-flex justify-content-around">
+            <li ><a href="#">Share an update</a></li>
+            <li @click="inProgress()"><a href="#">Share a photo</a></li>
+            <li @click="inProgress()"><a href="#">Write an article</a></li>
+         </ul>
+         <textarea v-model="statusUpdate"  name="" placeholder="Maximum 150 characters" id="textarea" cols="30" rows="2"></textarea>
+         <button class="btn btn-primary" v-on:click="postStatus()" > Post</button>
+      </div>
+      <!-- TEMPLATE STATUS -->
+      <div class="statuscard col d-flex  flex-column "  >
+         <a href="#"  style="position:absolute; right:20px; top:10px">x</a>
+         <div class="user d-flex align-items-center  ">
+            <div class=" img "> <img :src="user.img" alt=""> </div>
+            <p class="col">{{user.name}}</p>
+         </div>
+         <div class="status">
+            <p class="col"> This is a status template and its awesome. </p>
+            <p class="col " style="text-align:right">2 days ago</p>
+         </div>
+      </div>
+      <!-- NEW STATUS -->
+      <div class="statuscard col d-flex  flex-column "  v-for="status in newStatus" :key="status.id">
+         <a href="#" @click="removeStatus(item)" style="position:absolute; right:20px; top:10px">x</a>
+         <div class="user d-flex align-items-center  ">
+            <div class=" img "> <img :src="status.img" alt=""> </div>
+            <p class="col">{{status.name}}</p>
+         </div>
+         <div class="status">
+            <p class="col">  {{status.status}} </p>
+            <p class="col " style="text-align:right">{{status.time}}</p>
+         </div>
+      </div>
+   </div>
 </template>
 
 <script>
@@ -69,7 +66,7 @@ export default {
 					status: this.statusUpdate,
 					img: this.user.img,
 					name: this.user.name,
-					time: moment(date,'x').format('h:mm:ss a')
+					time: moment(date,'x').fromNow()
 				})
 				this.statusUpdate =""
 			}

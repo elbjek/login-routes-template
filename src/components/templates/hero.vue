@@ -41,11 +41,17 @@ export default {
         font-size: 20px;
     }
     .login{
-        padding:10px 20px ;
+        padding:10px 48px ;
         background-color: rgba($color: $white, $alpha: 0.8);
+             border:1px solid rgba($color: $white, $alpha: 0.9);
         border-radius: 10px;
         color:$dark-font;
         font-weight: bolder;
+        &:hover{
+            background-color:  rgba($color: $white, $alpha: 0.9);
+            border:1px solid rgba($color: $white, $alpha: 1);
+            text-decoration: none;
+        }
     }
 }
 </style>

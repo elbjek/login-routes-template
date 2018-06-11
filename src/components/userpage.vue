@@ -1,10 +1,10 @@
  <template>
   <div class="container-fluid">
     <cover></cover>
-      <div class="row" >
-          <sidebar class="col-lg-2"></sidebar>
-          <usercontent class="col-lg-8 "></usercontent>
-          <whotofollow class="col-lg-2  "></whotofollow>
+      <div class="row d-flex justify-content-center" >
+          <sidebar class="col-lg-2 col-md-12 col-sm-12"></sidebar>
+          <usercontent class="col-lg-8 col-md-12 col-sm-12 "></usercontent>
+          <whotofollow class="col-lg-2 col-md-12 col-sm-12  "></whotofollow>
       </div>
   </div>
 </template>
@@ -31,6 +31,7 @@ export default {
 .container-fluid{
   max-width:1440px;
   margin:0 auto;
+  padding:0;
 // float: left;
 }
 

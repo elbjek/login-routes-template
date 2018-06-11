@@ -21,7 +21,7 @@
          </form>
          <div class="noAcc">
             <p>Dont have an account yet?</p>
-           <router-link>SIGN UP</router-link>
+           <router-link to="/signup">SIGN UP</router-link> 
          </div>
       </div>
    </div>

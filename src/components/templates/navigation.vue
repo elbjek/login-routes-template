@@ -43,6 +43,10 @@ export default {
 .nav-item a{
     color: rgba($color: $dark-font, $alpha: 1.0) !important;
     font-weight: bold;
+    margin-left:20px;
+    a{
+      margin:0;
+    }
     &:hover{
       text-decoration: none;
     }
@@ -52,6 +56,7 @@ export default {
     color:$dark-font;;
     font-size: 20px;
     transition: 0.2s ease-in-out;
+    // margin-left:10px;
     &:hover{
       text-decoration: none;
       transform: scale(1.05,1.05);
