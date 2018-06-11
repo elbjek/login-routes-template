@@ -85,7 +85,6 @@ export default {
 		border-top: 2px solid rgba($color: $dark-font, $alpha: 0.1);
 		width: 100%;
 		.col {
-			// border: 1px solid black;
 			text-align: center;
 			&:hover {
 				color: #4C585C;

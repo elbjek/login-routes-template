@@ -30,21 +30,22 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-h1, p{
-    color:$white;
-}
-h1{
-    font-size: 60px;
-    font-weight: 900;
-} p{
-    font-size: 20px;
-}
-.login{
-    padding:10px 20px ;
-    background-color: rgba($color: $white, $alpha: 0.8);
-    border-radius: 10px;
-    color:$dark-font;
-    font-weight: bolder;
-}
+    h1, p{
+        color:$white;
+    }
+    h1{
+        font-size: 60px;
+        font-weight: 900;
+    } 
+    p{
+        font-size: 20px;
+    }
+    .login{
+        padding:10px 20px ;
+        background-color: rgba($color: $white, $alpha: 0.8);
+        border-radius: 10px;
+        color:$dark-font;
+        font-weight: bolder;
+    }
 }
 </style>

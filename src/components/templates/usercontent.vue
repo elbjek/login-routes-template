@@ -97,7 +97,7 @@ export default {
 			margin:0px 0px 0px 0px;
 			border:$border-light;
 			border-radius: 10px;
-			// padding:10px 0px;
+
 		ul{
 				border-bottom:$border-light;
 				margin:0;
@@ -106,10 +106,10 @@ export default {
 				list-style-type: none;
 				padding:20px 0px 5px;
 				border-bottom: 3px solid transparent;
-				// border:$border-light;
+
 
 				&:hover{
-					padding:10px 0px;
+		
 					border-bottom:$border-hover;
 				}
 				a{
