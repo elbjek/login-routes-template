@@ -9,7 +9,7 @@
 
 <script>
 
-import navigation from './components/navigation.vue'
+import navigation from './components/templates/navigation.vue'
 
 export default {
   name: 'app',
