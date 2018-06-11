@@ -60,7 +60,7 @@ export default {
 					name: this.user.name,
 					time: moment(date).fromNow()
 				})
-			};
+			}
 
 
 		},
@@ -72,7 +72,6 @@ export default {
 			this.newStatus.splice(index, 1);
 		},
 		showButton() {
-			console.log("im here")
 			this.show = true;
 		}
 	},
@@ -93,14 +92,16 @@ export default {
 		ul {
 			margin: 0;
 			border-bottom: 2px solid rgba($color: #000000, $alpha: 0.1);
+			font-weight: 600;
 			li {
 				display: inline;
 				padding: 15px 0px;
 				border-bottom: 3px solid rgba($color: #000000, $alpha: 0.0);
 				&:hover {
 					cursor: pointer;
+					// font-weight: 900;
 					border-bottom: 3px solid rgba($color: #2B3A3E, $alpha: 0.8);
-					background-color: rgba($color: #2B3A3E, $alpha: 0.1)
+
 				}
 			}
 		}
@@ -110,7 +111,7 @@ export default {
 		}
 		button {
 			// width:100px;
-			background: #00B2E2;
+			background: #A1703D;
 			cursor: pointer;
 			border: none;
 

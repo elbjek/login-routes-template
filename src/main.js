@@ -7,6 +7,9 @@ import VueRouter from 'vue-router';
 import router from './router';
 
 
+// CSS
+import './styles/variables.scss'
+
 import axios from 'axios';
 Vue.prototype.axios=axios
 

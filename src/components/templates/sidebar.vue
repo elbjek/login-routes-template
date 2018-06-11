@@ -46,7 +46,6 @@ export default {
 
 <style scoped lang="scss">
 
-
 .sidebar {
 	border: 2px solid rgba($color: #000000, $alpha: 0.1);
 	border-radius: 5px;
@@ -75,6 +74,9 @@ export default {
 				&:first-of-type {
 					padding: 30px 0px 0px
 				}
+				a {
+					color: #4C585C;
+				}
 			}
 		}
 	}
@@ -84,9 +86,13 @@ export default {
 		.col {
 			// border: 1px solid black;
 			text-align: center;
-		&:last-of-type{
-						border-left: 2px solid rgba($color: #000000, $alpha: 0.1);
-		}
+			&:hover {
+				color: #4C585C;
+				cursor: pointer;
+			}
+			&:last-of-type {
+				border-left: 2px solid rgba($color: #000000, $alpha: 0.1);
+			}
 			h2 {
 				margin-top: 10px;
 				font-size: 20px;

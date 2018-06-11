@@ -48,7 +48,14 @@ export default {
 }
 .logo{
     font-weight: 900 !important;
-    color:black;
+    color:#262C2E;
     font-size: 20px;
+    transition: 0.2s ease-in-out;
+    &:hover{
+      text-decoration: none;
+      transform: scale(1.05,1.05);
+      color:#262C2E;
+
+    }
 }
 </style>
