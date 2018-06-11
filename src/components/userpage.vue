@@ -1,6 +1,6 @@
  <template>
   <div>
-
+<cover></cover>
 <div class="container-fluid d-flex  flex-wrap" >
   <sidebar class="col-lg-2  "></sidebar>
   <usercontent class="col-lg-8 "></usercontent>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-
+import cover from '../components/cover.vue'
 import sidebar from '../components/sidebar.vue'
 import usercontent from '../components/usercontent.vue'
 import whotofollow from '../components/whotofollow.vue'
@@ -19,7 +19,8 @@ export default {
   components: {
     sidebar,
     usercontent,
-    whotofollow
+    whotofollow,
+    cover
   }
 }
 </script>
