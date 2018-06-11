@@ -20,24 +20,28 @@ export default {
   },
   data(){
     return{
-          users:[
-                {
-                    img:"http://cdn.ebaumsworld.com/mediaFiles/picture/166932/83208904.jpg",
-                    name:"MissB",
-                },
-                  {
-                    img:"http://www.evilmilk.com/pictures/Random_Celebrity_Picdump_6.jpg",
-                    name:"Shaquille O'Seal",
-                },
-                  {
-                    img:"https://www.topcelebritynetworths.com/cnwimages/a/adam-sandler.jpg",
-                    name:"Adam S",
-                }
+        //   users:[
+        //         {
+        //             img:"http://cdn.ebaumsworld.com/mediaFiles/picture/166932/83208904.jpg",
+        //             name:"MissB",
+        //         },
+        //           {
+        //             img:"http://www.evilmilk.com/pictures/Random_Celebrity_Picdump_6.jpg",
+        //             name:"Shaquille O'Seal",
+        //         },
+        //           {
+        //             img:"https://www.topcelebritynetworths.com/cnwimages/a/adam-sandler.jpg",
+        //             name:"Adam S",
+        //         }
 
-          ]
-          
+        //   ],
+          users:[]
           
       }
+  },
+  mounted(){
+      this.axios 
+      .get('http://api.myjson.com/bins/yt0eu').then(response => (this.users = response.data.users))
   }
 }
 </script>

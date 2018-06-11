@@ -1,6 +1,6 @@
  <template>
   <div>
-<cover></cover>
+
 <div class="container-fluid d-flex  flex-wrap" >
 Hey
 </div>
@@ -10,7 +10,7 @@ Hey
 <script>
 
 export default {
-  name: 'userpage',
+  name: 'cover',
 
   
 }

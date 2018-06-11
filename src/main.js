@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import axios from 'axios'
-
 window.Vue = Vue;
 window.VueRouter = VueRouter;
 import VueRouter from 'vue-router';
 import router from './router';
+
+
+import axios from 'axios';
+Vue.prototype.axios=axios
 
 // Bootstrap
 import BootstrapVue from 'bootstrap-vue'

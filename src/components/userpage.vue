@@ -10,10 +10,11 @@
 </template>
 
 <script>
-import cover from '../components/cover.vue'
+
 import sidebar from '../components/sidebar.vue'
 import usercontent from '../components/usercontent.vue'
 import whotofollow from '../components/whotofollow.vue'
+import cover from '../components/cover.vue'
 export default {
   name: 'userpage',
   components: {
